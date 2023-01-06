@@ -6,4 +6,7 @@ package L1_singleton.c2_lazy.dcl.other;
  * @date 2023/1/6 13:24
  */
 public class Helper {
+    public void work(){
+
+    }
 }
