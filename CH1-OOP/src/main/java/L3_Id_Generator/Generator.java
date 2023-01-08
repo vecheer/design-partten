@@ -32,9 +32,12 @@ public class Generator {
 
     public static String getId(CommonRequest request){
 
+        // 应该剥离出来到一个方法内 generateTime ，以提高代码的 可测试性
         LocalDateTime ldt = LocalDateTime.ofInstant(request.getDate().toInstant(), ZoneId.systemDefault());
         String time = DateTimeFormatter.ofPattern(DATA_FORMAT).format(ldt);
+
         String host = request.getHost().replace(".","");
+
         String randomId = randomStr(RANDOM_LENGTH);
 
         return time + SEPARATOR + host + SEPARATOR + randomId;
@@ -42,6 +45,10 @@ public class Generator {
 
 
     private static String randomStr(int length){
+
+        if (length <= 0)
+            throw new IllegalArgumentException("随机字符串长度[" + length + "]不合法!");
+
         StringBuilder result = new StringBuilder(length);
         for (int i = 0; i < length; i++) {
             int random = (int) (Math.random() * CHAR_TABLE.length);
