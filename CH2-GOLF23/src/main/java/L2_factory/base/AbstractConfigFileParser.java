@@ -47,7 +47,7 @@ public abstract class AbstractConfigFileParser implements ConfigFileParser{
                 // change to read
                 buffer.flip();
                 // read
-                fileContent.append(buffer.get());
+                fileContent.append(StandardCharsets.UTF_8.decode(buffer));
                 // clean
                 buffer.clear();
             }
@@ -57,7 +57,7 @@ public abstract class AbstractConfigFileParser implements ConfigFileParser{
         }
 
 
-        return null;
+        return fileContent.toString();
     }
 
     protected abstract Config doParse(String formattedString);
