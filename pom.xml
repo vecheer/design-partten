@@ -6,7 +6,6 @@
 
     <groupId>com.yq</groupId>
     <artifactId>design-partten</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>CH1-OOP</module>
@@ -28,11 +27,18 @@
 
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.6.3</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+        </dependency>
+
 
     </dependencies>
 
