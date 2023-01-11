@@ -2,7 +2,7 @@ package L2_factory.base.parser;
 
 import L2_factory.base.config.Config;
 import L2_factory.base.parser.support.AbstractConfigParser;
-import L2_factory.base.reader.support.FileLoader;
+import L2_factory.base.loader.support.FileLoader;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;

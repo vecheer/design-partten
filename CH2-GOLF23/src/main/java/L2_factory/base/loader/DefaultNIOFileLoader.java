@@ -1,6 +1,6 @@
-package L2_factory.base.reader;
+package L2_factory.base.loader;
 
-import L2_factory.base.reader.support.AbstractFileLoader;
+import L2_factory.base.loader.support.AbstractFileLoader;
 
 import java.io.FileInputStream;
 import java.io.IOException;

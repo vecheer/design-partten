@@ -2,7 +2,7 @@ package L2_factory.base.parser;
 
 import L2_factory.base.config.Config;
 import L2_factory.base.parser.support.AbstractConfigParser;
-import L2_factory.base.reader.support.FileLoader;
+import L2_factory.base.loader.support.FileLoader;
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
 import lombok.extern.slf4j.Slf4j;

@@ -1,7 +1,7 @@
 package L2_factory.base;
 
-import L2_factory.base.reader.DefaultNIOFileLoader;
-import L2_factory.base.reader.support.FileLoader;
+import L2_factory.base.loader.DefaultNIOFileLoader;
+import L2_factory.base.loader.support.FileLoader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

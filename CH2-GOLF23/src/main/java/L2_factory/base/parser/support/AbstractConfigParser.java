@@ -1,8 +1,8 @@
 package L2_factory.base.parser.support;
 
 import L2_factory.base.config.Config;
-import L2_factory.base.reader.DefaultNIOFileLoader;
-import L2_factory.base.reader.support.FileLoader;
+import L2_factory.base.loader.DefaultNIOFileLoader;
+import L2_factory.base.loader.support.FileLoader;
 
 /**
  * @author yq
