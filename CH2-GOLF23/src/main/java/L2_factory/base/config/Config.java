@@ -1,4 +1,4 @@
-package L2_factory.base;
+package L2_factory.base.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,5 +28,12 @@ public final class Config {
     public boolean containsConfig(String key){
         assert key != null : "the key to query config cannot be null";
         return configMap.containsKey(key);
+    }
+
+    @Override
+    public String toString() {
+        return "Config{" +
+                "configMap=" + configMap +
+                '}';
     }
 }
