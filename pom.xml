@@ -7,6 +7,7 @@
     <groupId>com.yq</groupId>
     <artifactId>design-partten</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <modules>
         <module>CH1-OOP</module>
         <module>CH2-GOLF23</module>

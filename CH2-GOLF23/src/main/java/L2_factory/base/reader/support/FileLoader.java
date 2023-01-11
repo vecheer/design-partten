@@ -5,7 +5,7 @@ package L2_factory.base.reader.support;
  * @version 1.0
  * @date 2023/1/10 20:39
  */
-public interface FileReader {
+public interface FileLoader {
 
     String fileToString(String filePath);
 

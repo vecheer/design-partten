@@ -2,7 +2,7 @@ package L2_factory.base.parser;
 
 import L2_factory.base.config.Config;
 import L2_factory.base.parser.support.AbstractConfigParser;
-import L2_factory.base.reader.support.FileReader;
+import L2_factory.base.reader.support.FileLoader;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
@@ -19,7 +19,7 @@ public class PropertiesConfigParser extends AbstractConfigParser {
     public PropertiesConfigParser() {
     }
 
-    public PropertiesConfigParser(FileReader reader) {
+    public PropertiesConfigParser(FileLoader reader) {
         super(reader);
     }
 

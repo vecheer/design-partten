@@ -12,9 +12,9 @@ import java.nio.file.Paths;
  * @version 1.0
  * @date 2023/1/10 20:42
  */
-public abstract class AbstractFileReader implements FileReader{
+public abstract class AbstractFileLoader implements FileLoader {
 
-    private static final Logger log = LoggerFactory.getLogger(AbstractFileReader.class);
+    private static final Logger log = LoggerFactory.getLogger(AbstractFileLoader.class);
 
     @Override
     public String fileToString(String filePath) {

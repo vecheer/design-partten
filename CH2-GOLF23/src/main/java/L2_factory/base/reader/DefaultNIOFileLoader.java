@@ -1,7 +1,6 @@
 package L2_factory.base.reader;
 
-import L2_factory.base.reader.support.AbstractFileReader;
-import com.google.common.annotations.VisibleForTesting;
+import L2_factory.base.reader.support.AbstractFileLoader;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,7 +13,7 @@ import java.nio.charset.StandardCharsets;
  * @version 1.0
  * @date 2023/1/10 21:05
  */
-public class DefaultNIOFileReader extends AbstractFileReader {
+public class DefaultNIOFileLoader extends AbstractFileLoader {
 
     @Override
     protected String doRead(String filePath) {

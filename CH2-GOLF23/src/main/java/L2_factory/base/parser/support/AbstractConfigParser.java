@@ -1,12 +1,8 @@
 package L2_factory.base.parser.support;
 
 import L2_factory.base.config.Config;
-import L2_factory.base.reader.DefaultNIOFileReader;
-import L2_factory.base.reader.support.FileReader;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import L2_factory.base.reader.DefaultNIOFileLoader;
+import L2_factory.base.reader.support.FileLoader;
 
 /**
  * @author yq
@@ -15,20 +11,20 @@ import java.nio.file.Paths;
  */
 public abstract class AbstractConfigParser implements ConfigParser {
 
-    private final FileReader reader;
+    private final FileLoader loader;
 
     public AbstractConfigParser() {
         this(null);
     }
 
-    public AbstractConfigParser(FileReader reader) {
-        this.reader = reader!=null?reader:new DefaultNIOFileReader();
+    public AbstractConfigParser(FileLoader reader) {
+        this.loader = reader!=null?reader:new DefaultNIOFileLoader();
     }
 
     @Override
     public Config parse(String filePath) {
 
-        String formattedString = reader.fileToString(filePath);
+        String formattedString = loader.fileToString(filePath);
 
         return doParse(formattedString);
     }

@@ -1,7 +1,7 @@
 package L2_factory.base;
 
-import L2_factory.base.reader.DefaultNIOFileReader;
-import L2_factory.base.reader.support.FileReader;
+import L2_factory.base.reader.DefaultNIOFileLoader;
+import L2_factory.base.reader.support.FileLoader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,9 +10,9 @@ import org.junit.jupiter.api.Test;
  * @version 1.0
  * @date 2023/1/9 0:07
  */
-public class DefaultNIOFileReaderTest {
+public class DefaultNIOFileLoaderTest {
     String filePath = "C:\\Users\\Administrator\\Desktop\\market_quote.txt";
-    FileReader reader = new DefaultNIOFileReader();
+    FileLoader reader = new DefaultNIOFileLoader();
 
     @Test
     @DisplayName("NIO 读取文件")

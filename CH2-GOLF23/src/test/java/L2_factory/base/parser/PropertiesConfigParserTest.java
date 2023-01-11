@@ -1,7 +1,7 @@
 package L2_factory.base.parser;
 
 import L2_factory.base.config.Config;
-import L2_factory.base.reader.DefaultNIOFileReader;
+import L2_factory.base.reader.DefaultNIOFileLoader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @date 2023/1/10 22:27
  */
 class PropertiesConfigParserTest {
-    private final PropertiesConfigParser parser = new PropertiesConfigParser(new DefaultNIOFileReader());
+    private final PropertiesConfigParser parser = new PropertiesConfigParser(new DefaultNIOFileLoader());
 
     @Test
     @DisplayName("解析 properties 配置文件----正常情况1: 分隔符是 '=' ")

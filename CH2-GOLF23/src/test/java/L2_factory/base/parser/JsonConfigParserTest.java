@@ -1,7 +1,7 @@
 package L2_factory.base.parser;
 
 import L2_factory.base.config.Config;
-import L2_factory.base.reader.DefaultNIOFileReader;
+import L2_factory.base.reader.DefaultNIOFileLoader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class JsonConfigParserTest {
 
-    private final JsonConfigParser parser = new JsonConfigParser(new DefaultNIOFileReader());
+    private final JsonConfigParser parser = new JsonConfigParser(new DefaultNIOFileLoader());
 
     @Test
     @DisplayName("解析 json 配置文件----正常情况")
